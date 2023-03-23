@@ -1,0 +1,14 @@
+1. void createAccount(BankAccount *account):
+This function is responsible for creating a new bank account. It takes a pointer to a BankAccount structure as its argument. The function prompts the user to input the account number, account holder's name, and initial balance. Then, it stores these values in the respective fields of the BankAccount structure.
+
+2. void deposit(BankAccount *account, float amount):
+This function handles depositing money into an account. It takes two arguments: a pointer to a BankAccount structure and a float representing the amount to be deposited. The function adds the deposit amount to the account balance and prints a confirmation message. No return value is needed since the balance is directly updated through the pointer to the BankAccount structure.
+
+3. void withdraw(BankAccount *account, float amount):
+This function is used for withdrawing money from an account. It takes two arguments: a pointer to a BankAccount structure and a float representing the amount to be withdrawn. The function checks if the account has sufficient balance for the withdrawal. If there are enough funds, it deducts the withdrawal amount from the account balance and prints a confirmation message. If the account balance is insufficient, it prints an error message. No return value is needed since the balance is directly updated through the pointer to the BankAccount structure.
+
+4. void checkBalance(const BankAccount *account):
+This function checks and displays the account balance. It takes a pointer to a BankAccount structure as its argument. The const qualifier indicates that the function will not modify the BankAccount structure, ensuring that the account data remains unchanged. The function prints the current account balance to the screen.
+
+5. void displayAccount(const BankAccount *account):
+This function displays the account information, including the account number, account holder's name, and account balance. It takes a pointer to a BankAccount structure as its argument. The const qualifier indicates that the function will not modify the BankAccount structure, ensuring that the account data remains unchanged. The function prints the account information to the screen.
